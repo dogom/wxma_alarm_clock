@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view style="padding: 30rpx">
+  <view bindtap='goClock' style="padding: 30rpx 50rpx;color: #333;">
+    每日提醒
+  </view>
+  <view wx:for="{{list}}" style="padding: 30rpx 40rpx;border-bottom: 1rpx solid #f1f1f1;display: flex;justify-content: space-between;align-items: center;">
+    <view style="display: flex;flex-direction: column;">  
+      <view style="font-size: 40rpx;font-weight: bold;color: {{item.active?'#333;':'#999'}}">{{item.start}}</view>
+      <view style="color: {{item.active?'#333;':'#999'}}">{{item.remark}}</view>
+    </view>
+    <view>
+      <switch checked="{{item.active}}" data-index='{{index}}' bindchange="switchChange"/>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+<!--pages/clock/index.wxml-->
+<view style="height: 100vh;;display: flex;flex-direction: column;align-items: center;justify-content: space-around;">
+    <view style="display: flex;flex-direction: column;align-items: center;">
+        <image mode="aspectFill" src="/images/clock.png" style="width: 258rpx;height: 258rpx;"></image>
+        <view>正在响铃...</view>
+    </view>
+    <view bindtap='onclose' style="text-align: center;color: #999;;line-height: 250rpx;width: 250rpx;height: 250rpx;border: 1px solid #f1f1f1;box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);border-radius: 50%;">
+        点击关闭
+    </view>
+</view>
